@@ -28,4 +28,9 @@ if ! eMSG=$(circleci config validate -c .circleci/config.yml); then
 fi
 ```
 
+実行可能ファイルにしておく
+```
+$ chmod +x pre-commit
+```
+
 参考) https://circleci.com/blog/circleci-hacks-validate-circleci-config-on-every-commit-with-a-git-hook/
