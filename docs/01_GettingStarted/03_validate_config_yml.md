@@ -14,18 +14,21 @@ circleci config validate -c .circleci/config.yml
 
 こんな感じの内容を書いておく。
 
+
 ```
-#!/usr/bin/env bash
-
-# The following line is needed by the CircleCI Local Build Tool (due to Docker interactivity)
-exec < /dev/tty
-
-# If validation fails, tell Git to stop and provide error message. Otherwise, continue.
-if ! eMSG=$(circleci config validate -c .circleci/config.yml); then
-    echo "CircleCI Configuration Failed Validation."
-    echo $eMSG
-    exit 1
-fi
+#!/usr/bin/env bash↲
+↲
+# The following line is needed by the CircleCI Local Build Tool (due to Docker interactivity)↲
+exec < /dev/tty↲
+↲
+# If validation fails, tell Git to stop and provide error message. Otherwise, continue.↲
+circleci config validate -c .circleci/config.yml↲
+if [ $? -ne 0 ]; then↲
+  echo "circleci config validation failed."↲
+  echo "check .circleci/config.yml"↲
+  exit 1↲
+else↲
+  echo "circleci config validation succeeded."↲
 ```
 
 実行可能ファイルにしておく
