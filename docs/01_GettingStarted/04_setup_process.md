@@ -9,7 +9,9 @@
 |Imageの選定|[利用するイメージ(ContainerかMachine)を選ぶ]()|
 |データベースを設定する|[データベース設定](05_configuring_databases.md)|
 |アプリケーションの依存関係パッケージなどをインストールする|[Go言語向けのサンプル](https://github.com/CircleCI-Public/circleci-demo-go), [config.ymlのサンプル](06_sample_go.md)|
-|ビルド高速化のためのキャッシュの利用?||
+|ビルド高速化のためのキャッシュの利用?|[キャッシュ利用](07_cache_dependencies.md)|
+|ステップを使ってジョブを書く|[ステップ](08_Writing_Jobs_With_Steps.md)|
+
 
 # 参考
 https://circleci.com/docs/2.0/
