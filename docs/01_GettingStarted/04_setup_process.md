@@ -11,6 +11,8 @@
 |アプリケーションの依存関係パッケージなどをインストールする|[Go言語向けのサンプル](https://github.com/CircleCI-Public/circleci-demo-go), [config.ymlのサンプル](06_sample_go.md)|
 |ビルド高速化のためのキャッシュの利用?|[キャッシュ利用](07_cache_dependencies.md)|
 |ステップを使ってジョブを書く|[ステップ](08_Writing_Jobs_With_Steps.md)|
+|ブラウザテストを実現する(Selenium)|まだほっとく|
+|テストの結果収集|(テスト結果の収集)[09_Get_Test_Results.md]|
 
 
 # 参考
